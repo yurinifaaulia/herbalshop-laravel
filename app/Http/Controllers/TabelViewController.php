@@ -12,7 +12,7 @@ class TabelViewController extends Controller
         'user'       => ['Data User', 'v_user'],
         'vendor'     => ['Data Vendor', 'v_vendor'],
         'margin'     => ['Margin Penjualan', 'v_margin_penjualan'],
-        'pengadaan'  => ['Total Pengadaan per Vendor', 'v_total_pengadaan_vendor'],
+        'rekap-vendor' => ['Rekap Pengadaan per Vendor', 'v_total_pengadaan_vendor'],
         'kartu-stok' => ['Kartu Stok', 'v_kartu_stok'],
     ];
 

@@ -8,6 +8,8 @@ use App\Http\Controllers\TabelViewController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\VendorController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PengadaanController;
+use App\Http\Controllers\PenerimaanController;
 
 Route::view('/', 'beranda');
 
@@ -45,6 +47,15 @@ Route::delete('/user/{id}', [UserController::class, 'destroy']);
 Route::get('/penjualan', [PenjualanController::class, 'index']);
 Route::post('/penjualan', [PenjualanController::class, 'store']);
 
-// Halaman tabel biasa (dari view)
+// Pengadaan (header + detail satu halaman)
+Route::get('/pengadaan', [PengadaanController::class, 'index']);
+Route::post('/pengadaan', [PengadaanController::class, 'store']);
+Route::delete('/pengadaan/{id}', [PengadaanController::class, 'destroy']);
+
+// Penerimaan
+Route::get('/penerimaan', [PenerimaanController::class, 'index']);
+Route::post('/penerimaan', [PenerimaanController::class, 'store']);
+Route::patch('/penerimaan/{id}/tuntas', [PenerimaanController::class, 'tuntas']);
+
 Route::get('/{nama}', [TabelViewController::class, 'show'])
-    ->where('nama', 'role|pengadaan|kartu-stok');
+    ->where('nama', 'role|rekap-vendor|kartu-stok');

@@ -85,3 +85,23 @@ form.crud input, form.crud select {
 .btn-merah { background: #c0392b; }
 .pesan-ok  { color: #1e6b34; }
 .pesan-err { color: #a12a35; }
+
+.badge-pending {
+    background: #fff3cd;
+    color: #8a6d0b;
+}
+.kartu {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+.kartu-judul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.catatan {
+    color: #777;
+    font-size: 13px;
+}
