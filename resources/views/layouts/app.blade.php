@@ -16,6 +16,7 @@
     <a href="{{ url('/vendor') }}">Vendor</a>
     <a href="{{ url('/margin') }}">Margin</a>
     <a href="{{ url('/pengadaan') }}">Pengadaan</a>
+    <a href="{{ url('/penjualan') }}">Penjualan</a>
     <a href="{{ url('/kartu-stok') }}">Kartu Stok</a>
 </nav>
 <main>
